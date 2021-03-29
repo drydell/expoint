@@ -95,12 +95,12 @@ export const PriceInput = ({ field, min, defaultValue, value, updateFormData }) 
       defaultValue={defaultValue}
       value={value}
       stringMode={false}
-      onChange={val =>
+      onChange={val => {
         updateFormData({
           field,
           value: isFinite(val) && val >= min ? val : defaultValue
         })
-      }
+      }}
     />
   </Space>
 );

@@ -162,6 +162,7 @@ export const ExPointOrderEntry = ({
                   <PriceInput
                     field="price"
                     defaultValue={0.00}
+                    min={0.00}
                     value={formData.price}
                     updateFormData={updateFormData}
                   />
@@ -174,6 +175,7 @@ export const ExPointOrderEntry = ({
                 <div>
                   <PriceInput
                     field="stopPrice"
+                    min={0.00}
                     defaultValue={0.00}
                     value={formData.stopPrice}
                     updateFormData={updateFormData}
